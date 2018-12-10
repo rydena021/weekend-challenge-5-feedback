@@ -11,7 +11,6 @@ class ReviewComments extends Component {
 
   handleClick = () => {
     this.props.dispatch({ type: 'ADD_COMMENTS', payload: this.state.comments });
-    this.props.history.push('/4');
   }
 
   handleChange = (event) => {
