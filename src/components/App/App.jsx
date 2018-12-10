@@ -20,7 +20,7 @@ class App extends Component {
           <Route path="/1" exact component={ReviewBrewery}></Route>
           <Route path="/2" exact component={ReviewStyle}></Route>
           <Route path="/3" exact component={ReviewComments}></Route>
-          <Route path="/3" exact component={ReviewSuccess}></Route>
+          <Route path="/4" exact component={ReviewSuccess}></Route>
           <Route path="/admin" component={Admin}></Route>
         </div>
       </Router>

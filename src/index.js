@@ -1,8 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './components/App/App';
+import App from './components/App/App.jsx';
 import registerServiceWorker from './registerServiceWorker';
+import { Provider } from 'react-redux';
+// import reducers
+import storeInstance from './components/Redux/Reducers/feedback.reducer.jsx';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(<Provider store={storeInstance}><App /></Provider>, document.getElementById('root'));
 registerServiceWorker();
